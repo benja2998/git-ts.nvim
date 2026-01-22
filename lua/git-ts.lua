@@ -9,11 +9,6 @@ vim.g.loaded_gitts = 1
 local M = {}
 
 function M.open()
-   if vim.fn.executable("git-ts") ~= 1 then
-      print("No git-ts found. See https://github.com/benja2998/git-ts for installation");
-      return
-   end
-   
    -- Create a new scratch buffer for the floating terminal
    local buf = vim.api.nvim_create_buf(false, true) -- unlisted, scratch
 
