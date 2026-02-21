@@ -1,4 +1,4 @@
--- Git-ts Neoivm plugin
+-- Git-ts Neovim plugin
 
 if vim.g.loaded_gitts == 1 then
    return
